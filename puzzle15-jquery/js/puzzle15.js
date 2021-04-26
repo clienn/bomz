@@ -69,6 +69,9 @@
                                 cellZero.animate({top: '+=' + -dy, left: '+=' + -dx}, 50, 'linear', () => {
                                     isAnimating = false;
                                     swap(pos, grid);
+
+                                    // place code here if puzzle is completed
+                                    console.log(isComplete(grid));
                                 });
                             });
                         }
@@ -118,6 +121,20 @@
                 }
 
                 return false;
+            }
+
+            var isComplete = (grid) => {
+                let count = 0;
+
+                for (let i = 0; i < 4; ++i) {
+                    for (let j = 0; j < 4; ++j) {
+                        if (count++ != grid[i][j]) {
+                            return false;
+                        }
+                    }
+                }
+
+                return true;
             }
 			
 			return this.each(function() {
