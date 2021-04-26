@@ -1,0 +1,40 @@
+#puzzle15 {
+    /* padding: 5px; */
+    border: 2px solid #000;
+}
+
+.puzzle15-cell {
+    /* padding: 10px; */
+    /* border: 2px solid #f00; */
+    margin: 1px;
+    position: relative;
+    float: left;
+    color: #fff;
+    background: #0EAFE1;
+    font-weight: bold;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.puzzle15-cell {
+    cursor: pointer;
+}
+
+.puzzle15-cell div {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#puzzle15 .no-bg {
+    background: none;
+}

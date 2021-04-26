@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Puzzle 15 JQuery</title>
+
+        <link rel="stylesheet" href="css/puzzle15.css" />
+
+        <script type="text/javascript" src="js/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="js/puzzle15.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#puzzle15').puzzle15({
+                    dimension: 350,
+                    cellClass: 'puzzle15-cell'
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="puzzle15"></div>
+    </body>
+</html>
